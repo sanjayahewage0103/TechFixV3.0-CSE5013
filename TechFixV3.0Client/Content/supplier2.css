@@ -1,0 +1,90 @@
+﻿/* Order Management Styles */
+h2 {
+    color: #FF9800;
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+    h2 i {
+        margin-right: 10px;
+    }
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.order-management-section {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .table th, .table td {
+        border: 1px solid #FFB74D;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .table th {
+        background-color: #FFE0B2;
+        color: #E65100;
+        font-weight: bold;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #FFF3E0;
+    }
+
+    .table tr:hover {
+        background-color: #FFE0B2;
+    }
+
+.status-dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #FFB74D;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #333;
+    font-size: 14px;
+}
+
+.update-button {
+    padding: 8px 12px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+    .update-button:hover {
+        background-color: #F57C00;
+    }
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+
+        .table th, .table td {
+            padding: 8px;
+        }
+
+    .status-dropdown, .update-button {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,95 @@
+﻿/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+.sidebar {
+    background-color: #333;
+    width: 250px; /* Fixed width for sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+    .nav-links li {
+        margin: 15px 0; /* Spacing between links */
+    }
+
+        .nav-links li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+            .nav-links li a:hover {
+                background-color: #FB8C00;
+            }
+
+.logout {
+    margin-top: auto; /* Push the logout button to the bottom */
+}
+
+.logout-btn {
+    background-color: #e65100ad;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for button */
+}
+
+    .logout-btn:hover {
+        background-color: #BF360C;
+    }
+
+.main-content {
+    flex-grow: 1; /* Takes the remaining space */
+    padding: 20px;
+    background-color: #FFF5E6;
+}
+
+.header {
+    background-color: #ff8100;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .header h2 {
+        margin: 0;
+    }
+
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="TechFixV3._0Client.Admin.AdminMaster" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Dashboard - TechFix</title>
+    <link href="~/Content/AdminMaster.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/AdminDash.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Admin1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Admin2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="sidebar">
+                <div class="logo">
+                    <h1><i class="fas fa-tools"></i> TechFix</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="AdminDashboard.aspx"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="ManageUsers.aspx"><i class="fas fa-users"></i> Manage Users</a></li>
+                    <li><a href="ManageInventory.aspx"><i class="fas fa-boxes"></i> Manage Inventory</a></li>
+                    <li><a href="OrderSummary.aspx"><i class="fas fa-clipboard-list"></i> Order Summary</a></li>
+                </ul>
+                <div class="logout">
+                    <asp:Button ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click" CssClass="logout-btn" />
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="header">
+                    <h2>Admin Dashboard</h2>
+                </div>
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
