@@ -124,7 +124,7 @@ You may:
 You may not:
 - Modify, redistribute, or use this portfolio commercially without written permission.
 
-See the full LICENSE file for more information.
+See the full LICENSE file (./TechFixV3.0-CSE5013_LICENSE.md) for more information.
 
 ---
 
